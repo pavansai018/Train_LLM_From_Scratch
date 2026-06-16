@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import math
-from position_encoding.rope import RotaryPositionEmbedding
+from iii_position_encoding.rope import RotaryPositionEmbedding
 
 class MultiHeadAttention(nn.Module):
     """
