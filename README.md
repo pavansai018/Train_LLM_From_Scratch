@@ -133,7 +133,7 @@ import torch
 embedding = Embedding(vocab_size=50257, d_model=768)
 x = embedding(torch.tensor([ids]))  # [1, seq_len, 768]
 
-block = TransformerBlock(d_model=768, num_heads=12, d_ff=3072)
+block = TransformerBlock(d_model=768, num_heads=12,)
 out = block(x)  # [1, seq_len, 768]
 print(out.shape)
 ```
