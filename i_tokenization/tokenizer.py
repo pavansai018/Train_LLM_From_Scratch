@@ -88,7 +88,7 @@ class SimpleTokenizer:
         this number determined the size of our model's output layer - the final linear layer must have
         vocab_size outputs (one score for each possible next token).
 
-            50,257 means the model chooses from 5-,257 possibilities every time it predicst the next word.
+            50,257 means the model chooses from 50,257 possibilities every time it predicst the next word.
         """ 
         return self.config.vocab_size
     
